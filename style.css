@@ -1,0 +1,236 @@
+@font-face {
+    font-family: main;
+    src: url(assets/IndieFlower-Regular.ttf);
+}
+
+@font-face {
+    font-family: text-wall;
+    src: url(assets/LilitaOne-Regular.ttf);
+}
+
+:root {
+    --edges: #0077B6;
+    --cards: #90E0EF;
+    --main: #0077B6;
+    --name: #d1cf36;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: main;
+    box-sizing: border-box;
+}
+
+svg {
+    width: calc(min(30px, 16%));
+}
+
+header {
+    margin: 90px 6vw 60px;
+    background-color: transparent;
+    box-shadow: none;
+    height: 500px;
+    display: flex;
+    align-items: center;
+
+    .character {
+        position: relative;
+        margin: 0px;
+        height: 582px;
+        width: 388px;
+        background-image: url(./assets/pfp.jpeg);
+        background-position: center;
+        background-size: cover;
+
+
+        h2 {
+            position: absolute;
+            top: auto;
+            bottom: 0px;
+            left: 0;
+            color: var(--name);
+            font-size: 2.5rem;
+            width: 100%;
+            font-weight: 100;
+            text-align: center;
+        }
+    }
+
+    .about {
+
+        position: relative;
+        background-color: white;
+        box-shadow: 3px 3px 6px 3px rgba(152, 152, 152, 0.5);
+        width: 65%;
+        height: 400px;
+
+        h2 {
+            font-size: 3rem;
+            text-align: center;
+            width: 100%;
+            margin: 15px auto;
+        }
+
+        p {
+            margin: 20px auto;
+            font-size: 1.4rem;
+            font-family: text-wall;
+            text-align: center;
+        }
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        svg {
+            width: 35px;
+            height: auto;
+        }
+    }
+
+}
+
+body:before {
+    z-index: -1;
+    position: absolute;
+    background: var(--edges);
+    content: "";
+    min-height: 350px;
+    width: 100%;
+    transform: skewY(-6deg) scaleY(3) scaleX(1);
+    transform-origin: bottom center;
+    box-shadow: 0px 0px 8px 4px rgba(67, 67, 67, 0.5);
+}
+
+.content {
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-column-gap: 20px;
+        grid-row-gap: 60px;
+        margin-bottom: 40px;
+
+        
+
+        .card {
+            box-shadow: 3px 3px 6px 3px rgba(152, 152, 152, 0.5);
+            >div:first-child {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 250px;
+                color: white;
+                background-color: var(--cards);
+                font-size: 2.5rem;
+                text-align: center;
+            }
+            
+            .card-info {
+                >div {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: end;
+                    padding: 25px;
+    
+                    h3 {
+                        font-size: 1.5rem;
+                    }
+                }
+    
+                svg {
+                    width: 25px;
+                }
+            
+                p {
+                    font-family: text-wall;
+                    text-align: center;
+                    min-height: 120px;
+                    max-width: 600px;
+                }
+            }
+            
+        }
+    }
+
+ 
+}
+
+footer {
+    background-color: var(--edges);
+
+    .footer-text {
+        padding: 20px 15px 50px;
+        color: white;
+
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            width: 100%;
+            padding: 25px auto;
+        }
+
+        p {
+            margin: 15px 0px;
+            color: white;
+            font-size: 1.5rem;
+            span img {
+                display: none;
+            }
+        }
+
+        .links {
+            font-size: 30px;
+        
+            svg {
+                width: 35px;
+                height: auto;
+            }
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            margin: 20px auto;
+
+            .logo {
+                width: 35px;
+                height: auto;
+            }
+        }
+
+
+
+    }
+
+
+    .contact-image {
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    .links {
+        font-size: 30px;
+    
+        svg {
+            width: 35px;
+            height: auto;
+        }
+    }
+    
+}
