@@ -4,6 +4,7 @@ import downArrow from "../../Assets/down.svg";
 import upArrow from "../../Assets/up.svg";
 import deleteButton from "../../Assets/delete.svg";
 import edit from "../../Assets/edit.svg";
+import "../../Styles/Forms/Education.css";
 
 function Education({ schools, setSchools }) {
     const [isFormExpanded, setIsFormExpanded] = useState(false); // State for form display

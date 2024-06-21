@@ -3,6 +3,7 @@ import Header from "./Header";
 import Info from "./Info";
 import ShowCV from "./ShowCV";
 import Footer from "./Footer";
+import "../Styles/App.css";
 
 function App() {
     const [personalInfo, setPersonalInfo] = useState({

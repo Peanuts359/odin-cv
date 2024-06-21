@@ -2,6 +2,7 @@ import { useState } from "react";
 import downArrow from "../../Assets/down.svg";
 import upArrow from "../../Assets/up.svg";
 import user from "../../Assets/user.svg";
+import "../../Styles/Forms/Personal.css";
 
 function Personal({ personalInfoData, onInputChange }) {
     const [isFormExpanded, setIsFormExpanded] = useState(true); // State for form display

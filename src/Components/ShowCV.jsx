@@ -1,6 +1,7 @@
 import mail from "../Assets/mail.svg";
 import phone from "../Assets/phone.svg";
 import location from "../Assets/location.svg";
+import "../Styles/ShowCV.css";
 
 function ShowCV({ personalInfo, schools, companies }) {
     return (

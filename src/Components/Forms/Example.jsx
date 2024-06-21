@@ -1,3 +1,5 @@
+import "../../Styles/Forms/Example.css";
+
 function Example({ setPersonalInfo, setSchools, setCompanies }) {
     const loadExampleCV = () => {
         setPersonalInfo({

@@ -4,6 +4,7 @@ import downArrow from "../../Assets/down.svg";
 import upArrow from "../../Assets/up.svg";
 import deleteButton from "../../Assets/delete.svg";
 import edit from "../../Assets/edit.svg";
+import "../../Styles/Forms/Experience.css";
 
 function Experience({ companies, setCompanies }) {
     const [isFormExpanded, setIsFormExpanded] = useState(false); // State for form display
